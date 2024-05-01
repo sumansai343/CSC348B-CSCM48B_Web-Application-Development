@@ -8,7 +8,7 @@
      <div class="py-4">
          <div class="container">
              <div class="row">
-                 <div class="col-md-8">
+                 <div class="col-md-12">
                      <div class=" bg-green p-3 text-white">
                          <h4 class="mb-0">
                              {!! $post->name !!}
