@@ -18,3 +18,9 @@ Create Blog
 Edit and Delete blog posts
 
 ![alt text](image-4.png)
+
+
+Admin Panel(All access to edit delete content)
+![alt text](image-5.png)
+
+![alt text](image-6.png)

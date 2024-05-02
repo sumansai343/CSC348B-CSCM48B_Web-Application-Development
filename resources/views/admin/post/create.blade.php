@@ -12,7 +12,7 @@
                 </div>
             @endif
             <div class="card-header">
-                <h4>Add Postsff
+                <h4>Add Posts
                     <a href="{{ url('admin/add-post') }}" class="btn btn-primary float-end">Add Posts</a>
                 </h4>
             </div>

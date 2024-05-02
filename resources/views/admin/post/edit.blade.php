@@ -11,11 +11,7 @@
                     @endforeach
                 </div>
             @endif
-            <div class="card-header">
-                <h4>Edit Posts
-                    <a href="{{ url('admin/posts') }}" class="btn btn-danger float-end">Back</a>
-                </h4>
-            </div>
+
             <div class="card-body">
                 <form action="{{ url('admin/update-post/' . $post->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
@@ -63,16 +59,15 @@
                         <textarea rows="3" name="meta_keyword" class="form-control">{{ $post->meta_keyword }}</textarea>
                     </div>
 
-                    <h6>Status</h6>
                     <div class="row">
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-4 mb-3 d-none">
                             <label>Status</label>
                             <input type="checkbox" value="{{ $post->status == '1' ? 'checked' : '' }}" name="status">
                         </div>
 
                         <div class="col-md-8">
                             <div class="mb-3">
-                                <button type="submit" class="btn btn-primary">Update Category</button>
+                                <button type="submit" class="btn bg-green">Update Blog Post</button>
                             </div>
                         </div>
                     </div>

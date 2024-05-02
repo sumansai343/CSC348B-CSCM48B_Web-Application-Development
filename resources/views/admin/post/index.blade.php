@@ -4,11 +4,6 @@
 @section('content')
     <div class="container-fluid px-4">
         <div class="card mt-4">
-            <div class="card-header">
-                <h4>View Posts
-                    <a href="{{ url('admin/add-post') }}" class="btn btn-primary float-end">Add Posts</a>
-                </h4>
-            </div>
             <div class="card-body">
                 @if (session('message'))
                     <div class="alert alert-success">{{ session('message') }}</div>
@@ -17,12 +12,6 @@
                 <table id="myDataTable" class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>
-                                ID
-                            </th>
-                            <th>
-                                Category
-                            </th>
                             <th>
                                 Post Name
                             </th>
@@ -42,12 +31,6 @@
                         @foreach ($posts as $item)
                             <tr>
                                 <td>
-                                    {{ $item->id }}
-                                </td>
-                                <td>
-                                    {{ $item->category->name }}
-                                </td>
-                                <td>
                                     {{ $item->name }}
                                 </td>
 
@@ -56,12 +39,13 @@
                                 </td>
 
                                 <td>
-                                    <a href="{{ url('admin/post/' . $item->id) }}" class="btn btn-success">
+                                    <a href="{{ url('admin/post/' . $item->id) }}" class="btn bg-white border text-black">
                                         Edit
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="{{ url('admin/delete-post/' . $item->id) }}" class="btn btn-danger">
+                                    <a href="{{ url('admin/delete-post/' . $item->id) }}"
+                                        class="btn bg-white border text-black">
                                         Delete
                                     </a>
                                 </td>

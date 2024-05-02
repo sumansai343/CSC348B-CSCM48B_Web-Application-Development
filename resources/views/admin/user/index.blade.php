@@ -52,8 +52,8 @@
                                 </td>
 
                                 <td>
-                                    <a href="{{ url('admin/user/' . $item->id) }}" class="btn btn-success">
-                                        Edit
+                                    <a href="{{ url('admin/user/' . $item->id) }}" class="btn bg-green">
+                                        Edit User
                                     </a>
                                 </td>
                             </tr>
